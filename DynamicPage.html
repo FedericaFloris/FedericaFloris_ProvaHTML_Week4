@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Dynamic Page</title>
+  
+</head>
+<body onload="welcomeMessage()">
+    <h1> Prima pagina dinamica</h1>
+    <img id="foto" src="immagini/piscina.jpg" width="400" height="200" />
+    <br />
+    <br />
+    <button onclick="cambiaImmagine()">Cambia Immagine</button>
+    <button onclick="cambiaFont('p')">Cambia Font</button>
+    <button onclick="nascondi()">Nascondi Tabella</button>
+    <button onclick="scopre()">Scopri Tabella</button>
+    <button onclick="cambiaTesto()">Aggiungi NI</button> <!--aggiungere la parola NI a ogni cella-->
+    <button onclick="cambioSingolo()">Cambia Singola Cella</button>
+    <button onclick="verificaCheck()">Verifica Check</button>
+
+
+
+    <p>Primo Paragrafo</p>
+    <p>Secondo Paragrafo</p>
+    <p>Terzo Paragrafo</p>
+
+    <table id="TabellaNomi" border="1" onmouseover="nascondi()">
+        <!--onmouseover quando ci passp con il pulsante mi nasconde la tabella sto richiamando la funzione-->
+        <tr>
+            <td>Mario</td>
+            <td>Rossi</td>
+        </tr>
+        <tr>
+            <td>Giovanni</td>
+            <td>Bianchi</td>
+        </tr>
+        <tr>
+            <td>Giuseppe</td>
+            <td>Verdi</td>
+        </tr>
+    </table>
+
+    <label>Primo</label>
+    <input class="selection" type="checkbox" />
+    <label>Secondo</label>
+    <input class="selection" type="checkbox" />
+
+
+
+
+    <script src="DynamicPage.js"></script>
+</body>
+</html>

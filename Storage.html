@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>storage</title>
+</head>
+<body>
+    <form onsubmit="return false">
+    <label>Local Storage</label>
+    <input id="local" type="radio" name="chkStorage" checked />
+    <label>Session Storage</label>
+    <input type="radio" name="chkStorage"  />
+
+    <br />
+    <label>Chiave</label>
+    <input type="text" id="storageKey" />
+    <br />
+    <label>Valore</label>
+    <input type="text" id="storageValue" />
+
+    <br />
+    <button onclick="save()">Salva</button>
+    <button onclick="deleteAll()">Elimina tutto</button>
+    <button onclick="readAll()">Leggi tutto</button>
+    <button onclick="remove()">Cancella elemento</button>
+    <button onclick="getElemento()">Cerca elemento</button>
+
+        <div id="result"></div>
+
+    </form>
+    <script src="storage.js"></script>
+</body>
+</html>
